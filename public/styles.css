@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling with Gradient Background */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Styling for the UV box */
+.uv-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the UV box */
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
+}
+
+.uv-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+}
+/* Button Styling */
+button {
+
+    padding: 12px 24px; /* Adjusted padding for better spacing */
+    font-size: 1.2em;
+    color: #fff;
+    background: linear-gradient(to right, #4CAF50, #2E7D32); /* Gradient from lighter green to darker green */
+    border: none;
+    border-radius: 50px; /* Rounded button for modern look */
+    cursor: pointer;
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover and active states */
+    margin-top: 20px;
+    width: auto; /* Set to auto so it does not stretch to full width */
+    max-width: 200px; /* Set maximum width for the button */
+    display: inline-block; /* To ensure it doesn't stretch across the screen */
+}
+
+button:hover {
+    background: linear-gradient(to right, #388e3c, #2E7D32); /* Darker gradient on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+    background: linear-gradient(to right, #2E7D32, #1B5E20); /* Even darker gradient when active */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow resets when button is pressed */
+    transform: translateY(0); /* Return to original position when pressed */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .uv-box {
+        width: 80%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    .uv-box {
+        width: 90%;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
